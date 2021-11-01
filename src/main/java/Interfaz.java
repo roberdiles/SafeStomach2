@@ -2,12 +2,17 @@ public class Interfaz {
 
     private GestorDatos manager;
 
+    /**
+     * Clase Interfaz, se encarga de mostrar la interfaz de usuario, recibe un gestorDatos para ejecutar las acciones
+     * @param manager gestor de datos que posea el Arraylist obtenido del CSV
+     */
     public Interfaz(GestorDatos manager){
         this.manager=manager;
         iniciarMenu();
     }
 
-    public void iniciarMenu() {
+
+    private void iniciarMenu() {
         int opcion;
         do {
             opcion = opcionPrincipal();
@@ -18,7 +23,7 @@ public class Interfaz {
     }
 
 
-    public int opcionPrincipal() {
+    private int opcionPrincipal() {
         System.out.println("**********************************************************");
         System.out.println("*                Bienvenido a SaveStomach                *");
         System.out.println("**********************************************************");
@@ -31,7 +36,7 @@ public class Interfaz {
     }
 
 
-    public boolean menuBinario() {
+    private boolean menuBinario() {
         System.out.println("[1] Si");
         System.out.println("[2] No");
         if (LectorInt.input(1,2) == 1) {
@@ -40,7 +45,7 @@ public class Interfaz {
     }
 
 
-    public void tipodeBusqueda(int ingresoDatos) {
+    private void tipodeBusqueda(int ingresoDatos) {
         switch (ingresoDatos) {
             case 1 -> {
                 do {
@@ -70,7 +75,7 @@ public class Interfaz {
         }
     }
 
-    public void menuCategoria(){
+    private void menuCategoria(){
         int opcion;
         do {
             opcion = opcionCategoria();
@@ -78,7 +83,7 @@ public class Interfaz {
         } while (opcion !=9);
     }
 
-    public int opcionCategoria() {
+    private int opcionCategoria() {
         System.out.println("**********************************************************");
         System.out.println("*                       Categorías                       *");
         System.out.println("**********************************************************");
@@ -95,7 +100,7 @@ public class Interfaz {
         return LectorInt.input(1,9);
     }
 
-    public void mostrarCategoria(int opcion){
+    private void mostrarCategoria(int opcion){
         switch(opcion) {
             case 1 -> {
                 do {

@@ -16,6 +16,9 @@ public class GestorCSV {
     }
      */
 
+    /**
+     * GestorCSV, clase encargada de acceder directamente al archivo CSV y parsear los datos a un Arreglo
+     */
     public GestorCSV(){
         tryRead();
     }
@@ -62,6 +65,10 @@ public class GestorCSV {
         }
     }
 
+    /**
+     * Metodo getAlimentos, retorna el arreglo Alimentos, que contiene la lista de alimentos obtenida del CSV
+     * @return Arreglo con la lista de alimentos del CSV
+     */
     public ArrayList<Alimento> getAlimentos(){
         return this.alimentos;
     }

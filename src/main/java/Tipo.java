@@ -1,3 +1,6 @@
+/**
+ * Sirve como indice para la categoria Tipo de la clase Alimento
+ */
 public enum Tipo {
     Leche_Y_Derivados(),
     Carnes_Vegetales(),
