@@ -9,8 +9,8 @@ public class GestorDatos {
      * Clase GestorDatos encargada de gestionar los datos recibidos del CSV
      */
     public GestorDatos(){
-        GestorCSV csvManager= new GestorCSV();
-        this.alimentos=csvManager.getAlimentos();
+        GestorInput pageRetriever= new GestorInput();
+        this.alimentos=pageRetriever.getAlimentos();
     }
 
 

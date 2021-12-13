@@ -8,7 +8,7 @@ public class Alimento {
 
     private String nombre;
     private Tipo tipo;
-    private String precio;
+    private int precio;
     private String ubicacion;
     private Etiqueta etiqueta;
 
@@ -20,7 +20,7 @@ public class Alimento {
      * @param ubicacion Tienda en la cual se puede comprar
      * @param etiqueta Tipo vegano/vegetariano
      */
-    public Alimento(String nombre, Tipo tipo, String precio, String ubicacion, Etiqueta etiqueta) {
+    public Alimento(String nombre, Tipo tipo, int precio, String ubicacion, Etiqueta etiqueta) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
@@ -44,11 +44,11 @@ public class Alimento {
         this.tipo = tipo;
     }
 
-    public String getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
@@ -73,7 +73,7 @@ public class Alimento {
      * @return retorna los datos del objeto como String, ignorando los simbolos
      */
     public String getPrintData(){
-        return(this.nombre+" | "+this.tipo.toString().replaceAll("_"," ")+" | "+this.precio+" | "+this.ubicacion+" | "+this.etiqueta);
+        return(this.nombre+" | "+this.tipo.toString().replaceAll("_"," ")+" | $"+this.precio+" | "+this.ubicacion+" | "+this.etiqueta);
     }
 
 }
