@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"<Unnamed>","l":"Alimento"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Etiqueta"},{"p":"<Unnamed>","l":"GestorCSV"},{"p":"<Unnamed>","l":"GestorDatos"},{"p":"<Unnamed>","l":"Interfaz"},{"p":"<Unnamed>","l":"LectorInt"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Tipo"}];updateSearchResults();
