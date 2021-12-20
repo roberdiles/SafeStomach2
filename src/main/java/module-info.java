@@ -1,0 +1,2 @@
+module SafeStomach.FINAL {
+}
