@@ -11,4 +11,4 @@ La aplicación solo es de uso informativo y no esta asociada a ventas.
 
 ----------------------------
 Esta aplicación es un prototipo y esta sujeta a cambios.
-----------------------------
+
